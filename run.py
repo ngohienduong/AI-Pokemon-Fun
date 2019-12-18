@@ -86,7 +86,7 @@ async def showdown():
         elif config.bot_mode == constants.SEARCH_LADDER:
             await ps_websocket_client.search_for_match(config.pokemon_mode, team)
         else:
-            raise ValueError("Invalid Bot Mode")
+            raise ValueError("Damage Calc Change")
 
         winner = await pokemon_battle(ps_websocket_client, config.pokemon_mode)
 
